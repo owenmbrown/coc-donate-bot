@@ -12,7 +12,7 @@ import os
 
 # titles = pygetwindow.getAllTitles() #gets all window titles *just for testing COC=> "Clash of Clans"
 
-
+#ADD TRY AND EXCEPT TO SEE IF COC is open or not and continue running this to hold up the other programs dependent on getimage
 def getCOCImage(windowTitle = "Clash of Clans"):
     window = pygetwindow.getWindowsWithTitle(windowTitle)[0]
 
@@ -30,7 +30,7 @@ def getCOCImage(windowTitle = "Clash of Clans"):
 
     im = im.crop((lhs,top,rhs,bot))
     im.save(SAVE_PATH)
-    im.show(SAVE_PATH) # opens up image in default image viewer
+    # im.show(SAVE_PATH) # opens up image in default image viewer
 
 
-# getCOCImage() #uncomment to test for now until tests are working
+getCOCImage() #uncomment to test for now until tests are working

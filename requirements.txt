@@ -1,0 +1,7 @@
+pyautogui
+time
+PIL.Image
+pygetwindow
+imutils
+numpy
+cv2
