@@ -16,7 +16,7 @@ import os
 def getCOCImage(windowTitle = "Clash of Clans"):
     window = pygetwindow.getWindowsWithTitle(windowTitle)[0]
 
-    SAVE_PATH = os.path.join(os.path.dirname(__file__), "theImage.png") #change this to whereever we want to save the images maybe in a special folder
+    SAVE_PATH = os.path.join(os.path.dirname(__file__), "images\\theImage.png") #change this to whereever we want to save the images maybe in a special folder
     print(SAVE_PATH)
 
     pyautogui.screenshot(SAVE_PATH)
