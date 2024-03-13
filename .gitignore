@@ -1,2 +1,7 @@
+# These are the view of the base (username is on it)
 theImage.png
 res.png
+
+#sneaky
+__pycache__
+*.pyc

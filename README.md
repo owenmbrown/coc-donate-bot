@@ -1,21 +1,24 @@
 ### Progress Tracker
 
-| Feature                                           | Status | Description                                 |
-| ------------------------------------------------- | ------ | ------------------------------------------- |
-| Open up COC from system                           | 🟥     |                                             |
-| Opens Chat                                        | ✅     | Cdb_ClickChat.py                            |
-| Finds & Clicks Donation Button                    | 🟥     |                                             |
-| Donates what it can and remembers what to retrain | 🟥     |                                             |
-| Finds & Clicks Barracks                           | ✅     | Cdb_OpenBarracks.py                         |
-| Retrains/trains in barracks                       | 🟥     |                                             |
-| Closes COC                                        | 🟥     | Leaves it in state where it can be reopened |
-| Frontend w/ Electron                              | 🟥     |                                             |
+| Feature                                           | Status | Description                                                |
+| ------------------------------------------------- | ------ | ---------------------------------------------------------- |
+| Open up COC from system                           | 🟥     |                                                            |
+| Opens Chat                                        | ✅     | Cdb_ClickChat.py                                           |
+| Finds & Clicks Donation Button                    | 🟥     |                                                            |
+| Donates what it can and remembers what to retrain | 🟥     |                                                            |
+| Finds & Clicks Barracks                           | ✅     | Cdb_OpenBarracks.py                                        |
+| Retrains/trains in barracks                       | ✅     | Cdb_TrainTroop.py                                          |
+| Closes COC                                        | 🟥     | Leaves it in state where it can be reopened                |
+| Frontend w/ Electron                              | 🟥     |                                                            |
+| Add Random px numbers to all clicks               | 🟥     | Will help stay undetected if we think this'll be a problem |
+| Add all troop pngs                                | 🟨     | See Troop_Barbarian.png for reference                      |
+| Pause all processes button on frontend            | 🟥     |                                                            |
 
 **Status Legend:**
 
 - ✅ - Done and Working
-- 🟨 - Done but Needs Work (Bugs or Incomplete)
-- 🟥 - Not Started / Not Functional
+- 🟨 - Started
+- 🟥 - Not Started
 
 ### Notes
 
@@ -32,3 +35,8 @@ See `\helpers` and `mousecurrentpixel.py` for helpers and add them there
 
 - Maybe we could add where someone on a Discord channel requests something and it trains it and donates it
   - built in training timers for when it reopens and such
+- Maybe add always-on-top functionality so we don't have to worry about something covering it while the process is going on
+
+### BUGS
+
+<span style="color:red;">\*</span> Occasionally in `CDB_OpenBarracks.py` it glitches and cant find `trainTroops2.png`
