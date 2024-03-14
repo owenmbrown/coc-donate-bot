@@ -27,6 +27,7 @@
 
 ### Helper Files
 
+const.currentArmy[troop]
 See `\helpers` and `mousecurrentpixel.py` for helpers and add them there
 
 - also realized we can resize the CoC window with pygetwindow so that might make things ezier if we choose to hard code certain things if its faster
@@ -39,4 +40,6 @@ See `\helpers` and `mousecurrentpixel.py` for helpers and add them there
 
 ### BUGS
 
-<span style="color:red;">\*</span> Occasionally in `CDB_OpenBarracks.py` it glitches and cant find `trainTroops2.png`
+<span style="color:red;">\*</span> Occasionally in `Cdb_OpenBarracks.py` it glitches and cant find `trainTroops2.png`
+
+<span style="color:red;">\*</span> On large resolutions `Cdb_TrainTroop.py` isn't working with the current barb image

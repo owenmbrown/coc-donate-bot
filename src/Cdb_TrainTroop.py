@@ -57,5 +57,9 @@ def TrainTroop(troop, quantity = 1):
 
     for i in range(quantity):
         pyautogui.click(x=window.topleft[0] + click_x1 + 15, y=window.topleft[1] + click_y1 + 15)
+    
+    # updating the army comp
+    # 🐒🐒 but what if it is already full we need to make sure there are no bugs in donating and training on decrementing and incrementing const.currentArmy
+    const.currentArmy[troop] = const.currentArmy[troop] + quantity 
 
 
