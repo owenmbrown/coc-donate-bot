@@ -5,6 +5,7 @@
 # ✅✅✅ Working, a little slow tho
 ######################
 
+#it should return -1 if it failed to find the image this is NOT TESTED THO
 
 import cv2
 import numpy as np 
@@ -33,7 +34,7 @@ def ClickThis(forThis):
     imgGrey = cv2.bilateralFilter(imgGrey,11,17,17)
     template = cv2.bilateralFilter(template,11,17,17)
 
-
+    click_xx = -1
     #scaling for every plausible scale
     for scale in np.linspace(0.2,1.0,20)[::-1]:
         resized = imutils.resize(template,width=int(template.shape[1]*scale))
@@ -48,8 +49,13 @@ def ClickThis(forThis):
             for pt in zip(*loc[::-1]):
                 cv2.rectangle(imgGrey, pt, (pt[0] + w, pt[1]+h), (0,0,255), 2)
                 # print(pt[0], ",", pt[1])
-                CLICK_X = pt[0]
-                CLICK_Y = pt[1]
+                click_xx = pt[0]
+                click_yy = pt[1]
 
-    window = pygetwindow.getWindowsWithTitle("Clash of Clans")[0]
-    pyautogui.click(x=window.topleft[0] + CLICK_X + 15, y=window.topleft[1]+CLICK_Y + 15)
+    if click_xx != -1:
+        print("found *forThis*")
+        window = pygetwindow.getWindowsWithTitle("Clash of Clans")[0]
+        pyautogui.click(x=window.topleft[0] + click_xx + 15, y=window.topleft[1]+click_yy + 15)
+    else:
+        print("did NOT find *forThis*")
+        return -1

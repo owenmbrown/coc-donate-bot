@@ -6,6 +6,7 @@ import Cdb_TrainTroop as tt
 import time
 # there has to be a better way to do the above stuff w/o putting all the functions in the same file
 
+# ct.ClickThis("donateBtn.png") ## THIS IS V GLITCHY
 
 # cc.openChat() #✅
 # time.sleep(3)

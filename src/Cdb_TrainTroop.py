@@ -10,7 +10,7 @@
 # would have to search the image quantity times which was pretty slow
 # i think we should still add randomness to this too in the clicks
 ##############################
-import Cdb_Constants as const
+import Cdb_Globals as const
 import cv2
 import numpy as np 
 import matplotlib.pyplot as plt 

@@ -141,5 +141,8 @@ currentArmy = {
 isCOCOpen = False
 isChatOpen = False
 
+# statistics for fun
+userAllTimeDonateCounter = 0 #increment with housing space
+
 
 
