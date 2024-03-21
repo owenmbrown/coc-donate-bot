@@ -2,7 +2,7 @@
 
 | Feature                                           | Status | Description                                                |
 | ------------------------------------------------- | ------ | ---------------------------------------------------------- |
-| Open up COC from system                           | 🟥     |                                                            |
+| Open up COC from system                           | 🟥     | Checks for update too                                      |
 | Opens Chat                                        | ✅     | Cdb_ClickChat.py                                           |
 | Finds & Clicks Donation Button                    | 🟥     |                                                            |
 | Donates what it can and remembers what to retrain | 🟥     |                                                            |
